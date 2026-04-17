@@ -18,18 +18,18 @@ export default function Navbar() {
         </Link>
 
         {/* Nav Links */}
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 sm:gap-2">
           <NavLink to="/" end className={navLinkClass}>
-            <HomeIcon className="w-4 h-4" />
-            Home
+            <HomeIcon className="w-5 h-5 sm:w-4 sm:h-4" />
+            <span className="hidden sm:inline">Home</span>
           </NavLink>
           <NavLink to="/timeline" className={navLinkClass}>
-            <ClockIcon className="w-4 h-4" />
-            Timeline
+            <ClockIcon className="w-5 h-5 sm:w-4 sm:h-4" />
+            <span className="hidden sm:inline">Timeline</span>
           </NavLink>
           <NavLink to="/stats" className={navLinkClass}>
-            <ChartBarIcon className="w-4 h-4" />
-            Stats
+            <ChartBarIcon className="w-5 h-5 sm:w-4 sm:h-4" />
+            <span className="hidden sm:inline">Stats</span>
           </NavLink>
         </div>
       </div>

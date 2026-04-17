@@ -79,7 +79,7 @@ export default function HomePage() {
         </button>
 
         {/* Summary Cards */}
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {[
             { label: 'Total Friends', value: totalFriends },
             { label: 'On Track', value: onTrack },
@@ -116,7 +116,7 @@ export default function HomePage() {
             <p className="text-gray-400 text-sm mt-1">Click "Add a Friend" to get started.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {friends.map(friend => (
               <FriendCard key={friend.id} friend={friend} />
             ))}
